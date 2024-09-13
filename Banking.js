@@ -1,7 +1,9 @@
+// JavaScript code for Banking App
 let balance = 1500;
 const transactions = [];  // Array to store transactions
 
 function showPage(pageNumber) {
+    console.log(`Showing page ${pageNumber}`); // Debugging
     document.querySelectorAll('.page').forEach(page => page.style.display = 'none');
     document.getElementById(`page${pageNumber}`).style.display = 'flex';
 }
