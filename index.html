@@ -129,28 +129,31 @@
         </div>
         
         <!-- End of Gallery Section -->
-
-        <!-- Chatbox Section -->
-        <div class="chatbox">
-            <div id="chatMessages" class="messages">
-                <!-- Example of a message -->
-            </div>
-            <div class="chatbox-input-container">
-                <input type="text" id="messageInput" placeholder="Type a message..." />
-                <button onclick="sendMessage()">Send</button>
-            </div>
-            <button id="resetBtn">Reset Chat</button>
-        </div>
         
-        <!-- Password Popup -->
-        <div id="passwordPopup" class="popup">
-            <div class="popup-content">
-                <span class="close">&times;</span>
-                <h3>Enter Password to Reset</h3>
-                <input type="password" id="passwordInput" placeholder="Enter password" />
-                <button id="submitPassword">Submit</button>
-            </div>
+    <!-- Chatbox Section -->
+    <div class="chatbox">
+        <div id="chatMessages" class="messages">
+            <!-- Messages will appear here -->
         </div>
+        <div class="chatbox-input-container">
+            <input type="text" id="messageInput" placeholder="Type a message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        <button id="resetBtn">Reset Chat</button>
+    </div>
+
+    <!-- Password Popup -->
+    <div id="passwordPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h3>Enter Password to Reset</h3>
+            <input type="password" id="passwordInput" placeholder="Enter password" />
+            <button id="submitPassword">Submit</button>
+        </div>
+    </div>
+
+    <!-- Make sure your script is linked after the chatbox content -->
+    <script src="chatbox.js"></script>
 
     </div> <!-- Closing main container div -->
    
