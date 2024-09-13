@@ -1,5 +1,5 @@
 let balance = 1500;
-const transactions = [];  // Array to store transactions
+const transactions = [];  // store transactions
 
 // Function to show the appropriate page
 function showPage(pageNumber) {
