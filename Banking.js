@@ -1,17 +1,18 @@
-// JavaScript code for Banking App
 let balance = 1500;
 const transactions = [];  // Array to store transactions
 
+// Function to show the appropriate page
 function showPage(pageNumber) {
-    console.log(`Showing page ${pageNumber}`); // Debugging
     document.querySelectorAll('.page').forEach(page => page.style.display = 'none');
     document.getElementById(`page${pageNumber}`).style.display = 'flex';
 }
 
+// Function to update balance display
 function updateBalance() {
     document.getElementById('balance').innerText = `£${balance.toFixed(2)}`;
 }
 
+// Function to update transaction log
 function updateTransactionLog() {
     const log = document.getElementById('transactionLog');
     log.innerHTML = ''; // Clear existing log
@@ -22,6 +23,7 @@ function updateTransactionLog() {
     });
 }
 
+// Function to handle withdraw actions
 function withdraw() {
     const amount = parseFloat(document.getElementById('withdrawAmount').value);
     if (isNaN(amount) || amount <= 0) {
@@ -39,6 +41,7 @@ function withdraw() {
     showPage(2);
 }
 
+// Function to handle deposit actions
 function deposit() {
     const amount = parseFloat(document.getElementById('depositAmount').value);
     if (isNaN(amount) || amount <= 0) {
@@ -52,6 +55,7 @@ function deposit() {
     showPage(2);
 }
 
+// Function to reset the banking system
 function resetBankingSystem() {
     balance = 1500; // Reset balance
     transactions.length = 0; // Clear transaction history
@@ -60,6 +64,7 @@ function resetBankingSystem() {
     showPage(1); // Show the initial page
 }
 
+// Function to hide and reset the banking box
 function hideBankingBox() {
     document.getElementById('bankingBox').style.display = 'none';
     setTimeout(() => {
@@ -69,5 +74,7 @@ function hideBankingBox() {
 }
 
 // Initialize balance and transaction log on page load
-updateBalance();
-updateTransactionLog();
+document.addEventListener('DOMContentLoaded', () => {
+    updateBalance();
+    updateTransactionLog();
+});
