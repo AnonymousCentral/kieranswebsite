@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="imageframe.css">
+    <link rel="stylesheet" href="chatbox.css">
+    <title>My WebPage</title>
+</head>
+<body>
+
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+        <h1 class="heading1 center">Welcome To Kieran's Website</h1>
+
+        <!-- Portfolio Section -->
+        <div class="outer-container">
+            <div class="content-box">
+                <h1 class="heading1 center">My Portfolio</h1>
+                <p class="center">This page is a developing website. Stay tuned for updates!</p>
+                <p class="center">Hello, I'm Kieran, a 20-year-old aspiring programmer and developer with a passion for creating and a knack for problem-solving. I started my journey with HTML and CSS, and over the years, I’ve explored various programming languages and tools. This is where I showcase my projects, achievements, and ongoing learning experiences.</p>
+
+                <div class="image-container">
+                    <a href="about.html">
+                        <img src="HomePagePicOfMe.webp" alt="main-image" class="main-image">
+                    </a>
+                </div>
+
+                <p class="center"> Email: kieran.galvin.me@gmail.com </p>
+                <p class="center"> Feel free to contact this email </p>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="project-flex-container">
+            <h1 class="heading2 project-heading">Here are some of my projects</h1>
+            <p>1. Volcanic Vortex:<br>
+                Description: A 2D game featuring a dragon navigating through obstacles.<br>
+                Tools Used: Unity, C#.<br>
+                Highlights: First fully functional UI menu.</p>
+            <p>2. Family Fitness Website:<br>
+                Description: A Wix-based website promoting family fitness.<br>
+                Highlights: Created as a group course project, includes basic fitness information and tips for family fitness.</p>
+            <p>3. Canva & Gallery Website:<br>
+                Description: A Wix-based website showcasing Canva design trades, secrets, skills and more as well as featuring my pet cat Suki.<br>
+                Highlights: Utilized Canva for design elements, integrated a photo gallery.</p>
+            <p>4. Java UI Menu (Currently):<br>
+                Description: A blank UI menu with plans to expand features.<br>
+                Goal: Add settings, credits, and mini-games.</p>
+                <p>4. Calculator:<br>
+                    Description: A web based calculator on my hard coded website, built with Java Script. <br>
+                    Highlight: It works... </p>
+                    <p>4. Upcoming ():<br>
+                        Description: <br>
+                        Goal: </p>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="outer-container">
+            <div class="gallery-container">
+                <section id="slideshow-position">
+                    <div id="slideshow">
+                        <div class="entire-content">
+                            <div class="content-carrousel">
+                                <figure class="shadow">
+                                    <a href="calculatorpage.html">
+                                        <img src="CalculatorProjectImg.png" alt="Image 1">
+                                    </a>
+                                </figure>
+                                <figure class="shadow">
+                                    <a href="calculator.html">
+                                        <img src="ChatBoxImg.png" alt="Image 2">
+                                    </a>
+                                </figure>
+                                <figure class="shadow">
+                                    <a href="contact.html">
+                                        <img src="ContactFormImg.png" alt="Image 3">
+                                    </a>
+                                </figure>
+                                <figure class="shadow">
+                                    <a href="https://kierangalvinme.wixsite.com/visual-vortex" target="_blank">
+                                        <img src="DesignWebsiteImg.png" alt="Image 4">
+                                    </a>
+                                </figure>                                
+                                </figure>
+                                <figure class="shadow">
+                                    <a href="https://kierangalvinme.wixsite.com/my-site-1" target="_blank">
+                                        <img src="QuickWixWebsiteImg.png" alt="Image 5">
+                                    </a>
+                                </figure>
+                                <figure class="shadow">
+                                    <a href="https://drive.google.com/file/d/14SNVoA_XlZD3q6PKuQC5kH52gdyOhO--/view?usp=sharing" target="_blank">
+                                        <img src="VolcanicVortexGameImg.png" alt="Image 6">
+                                    </a>
+                                </figure>
+                                <figure class="shadow">
+                                    <a href="banking.html">
+                                        <img src="BankingAppImg.png" alt="Image 7">
+                                    </a>
+                                </figure>
+                                <figure class="shadow">
+                                    <a href="calculator.html">
+                                        <img src="ComingSoon.png" alt="Image 8">
+                                    </a>
+                                </figure>
+                                <figure class="shadow">
+                                    <a href="calculator.html">
+                                        <img src="ComingSoon.png" alt="Image 9">
+                                    </a>
+                                </figure>
+                                <figure class="shadow">
+                                    <a href="calculator.html">
+                                        <img src="ComingSoon.png" alt="Image 10">
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-under-carousel"></div>
+                </section>
+            </div>
+        </div>
+        
+        <!-- End of Gallery Section -->
+
+        <!-- Chatbox Section -->
+        <div class="chatbox">
+            <div id="chatMessages" class="messages">
+                <!-- Example of a message -->
+            </div>
+            <div class="chatbox-input-container">
+                <input type="text" id="messageInput" placeholder="Type a message..." />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+            <button id="resetBtn">Reset Chat</button>
+        </div>
+        
+        <!-- Password Popup -->
+        <div id="passwordPopup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <h3>Enter Password to Reset</h3>
+                <input type="password" id="passwordInput" placeholder="Enter password" />
+                <button id="submitPassword">Submit</button>
+            </div>
+        </div>
+
+    </div> <!-- Closing main container div -->
+   
+</body>
+</html>

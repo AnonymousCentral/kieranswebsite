@@ -1,0 +1,142 @@
+/* Chatbox Styles */
+.chatbox {
+    position: absolute;
+    width: 800px; /* Width similar to other content boxes */
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3; /* Ensure it's above the gallery */
+    top: 200px; /* Adjust this to place it between the portfolio and the gallery */
+    left: 51%; /* Center it horizontally */
+    transform: translateX(-50%);
+    height: 900px; /* Increased height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Chatbox Messages */
+#chatMessages {
+    flex: 1; /* Take available space */
+    overflow-y: scroll;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Space below messages */
+    position: relative; /* Required for positioning delete button */
+}
+
+/* Individual Message */
+.message {
+    position: relative; /* Required for positioning the X button */
+    padding: 10px;
+    margin-bottom: 10px; /* Space between messages */
+    background-color: #444; /* Slightly different background for messages */
+    border-radius: 5px;
+}
+
+/* Delete Button */
+.message .delete-btn {
+    position: absolute;
+    right: 10px; /* Space from the right edge */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.message .delete-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Chatbox Input Container */
+.chatbox-input-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Chatbox Input */
+#messageInput {
+    flex: 1; /* Grow to take available space */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: white;
+    font-size: 1.1em;
+    margin-right: 10px; /* Space between input and button */
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px; /* Button size */
+    background-color: #520000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+/* Ensure space between the input and Reset button */
+.chatbox > button#resetBtn {
+    margin-top: 10px; /* Added margin-top to separate Reset button */
+    align-self: center; /* Center the Reset button */
+}
+
+button:hover {
+    background-color: #721212;
+}
+
+/* Password Popup */
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4; /* Ensure popup is above everything */
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.popup-content input {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.1em;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #333;
+    font-size: 25px;
+}

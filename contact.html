@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <h1 class="heading1 center">Contact Me!</h1>
+
+    <form class="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="example@example.com" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+    
+        <label for="myFile">Upload File:</label>
+        <input type="file" id="myFile" name="filename">
+
+        <fieldset>
+            <legend>Choose Only ONE!</legend>
+            <div>
+                <input type="radio" id="pizza" name="food" value="pizza" required> 
+                <label for="pizza">Pizza</label>
+            </div>
+
+            <div>
+                <input type="radio" id="burger" name="food" value="burger" required> 
+                <label for="burger">Burger</label>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

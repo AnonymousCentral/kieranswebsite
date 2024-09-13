@@ -1,0 +1,287 @@
+/* Existing styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5a5a5a;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+/* For 2560x1440 monitors */
+@media (device-pixel-ratio: 2) and (min-width: 2560px) and (min-height: 1440px) {
+    body {
+        zoom: 90%;
+    }
+}
+
+/* For 1080x720 monitors */
+@media (device-pixel-ratio: 1) and (min-width: 1080px) and (min-height: 720px) {
+    body {
+        zoom: 75%;
+    }
+}
+
+/* CONTAINER */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url('websiteBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* PORTFOLIO BOX */
+.content-box {
+    position: absolute;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #202020; /* PORTFOLIO BACKGROUND */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    box-sizing: border-box;
+    top: 150px; /* UP / DOWN */
+    left: 1050px; /* LEFT / RIGHT */
+    z-index: 2; /* Ensure it's above gallery */
+}
+
+/* PROJECTS BOX */
+.project-flex-container {
+    position: absolute;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #202020; /* MY PROJECTS BACKGROUND */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+    top: 150px; /* UP / DOWN */
+    left: -650px; /* LEFT / RIGHT */
+}
+
+/* HEADING STYLES */
+.heading1 {
+    color: #ffffff; /* HEADING1 COLOUR */
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    background-color: #520000; /* HEADING1 BACKGROUND */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 2em; /* Increased font size */
+}
+
+.heading2 {
+    color: #ffffff; /* HEADING2 COLOUR */
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    background-color: #520000; /* HEADING2 BACKGROUND */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5em; /* Increased font size */
+}
+
+/* TEXT STYLES */
+p, li, h3 {
+    color: #ffffff; /* Text color */
+    line-height: 1.6;
+    margin-bottom: 15px;
+    background-color: #520000; /* Background color */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2em; /* Increased font size */
+}
+
+/* PROJECT BOX TEXT WHITE */
+.project-flex-container p {
+    color: white; /* White text */
+    text-align: left;
+    background-color: #520000; /* Background color */
+}
+
+/* NAVBAR STYLES */
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #333; /* Dark gray background */
+    padding: 10px;
+    text-shadow: 1px 1px black;
+    z-index: 3; /* Ensure navbar is above everything */
+}
+
+#navbar a {
+    color: white; /* White text */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+#navbar a:hover {
+    background-color: #ddd; /* Light gray background on hover */
+    color: black;
+    transition: 0.3s;
+}
+
+/* IMAGE CONTAINER */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+/* LIST */
+ol, ul {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .content-box, .project-flex-container {
+        position: static;
+        margin: 20px 0;
+        left: 0;
+        top: 0;
+    }
+
+    .heading1 {
+        font-size: 2em;
+    }
+
+    .heading2 {
+        font-size: 1.5em;
+    }
+
+    p, li, h3 {
+        font-size: 1em;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .content-box, .project-flex-container {
+        position: static;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .heading1 {
+        font-size: 1.5em;
+    }
+
+    .heading2 {
+        font-size: 1.2em;
+    }
+
+    p, li, h3 {
+        font-size: 0.9em;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar a {
+        margin: 5px 0;
+    }
+}
+
+/* Calculator Styles */
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #5a5a5a; /* Matches body background color */
+    margin: 0; /* Ensure no extra margin */
+}
+
+.calculator-container .calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-container .calculator-screen {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #252525;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.calculator-container .calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.calculator-container .calculator-keys button {
+    height: 40px;
+    font-size: 1.2rem;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calculator-container .calculator-keys button.operator {
+    background-color: #ff9500;
+    color: white;
+}
+
+.calculator-container .calculator-keys button.equal-sign {
+    background-color: #28a745;
+    color: white;
+    grid-column: span 4;
+}
+
+.calculator-container .calculator-keys button.all-clear {
+    background-color: #dc3545;
+    color: white;
+    grid-column: span 2;
+}
+

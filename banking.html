@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking App</title>
+    <link rel="stylesheet" href="bankingstyle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div id="bankingBox" class="movable-box">
+        <div class="header">
+            <h1>Banking App</h1>
+            <!-- Removed the X button -->
+        </div>
+        <div id="page1" class="page">
+            <button onclick="showPage(2)">Insert Card</button>
+        </div>
+
+        <div id="page2" class="page" style="display: none;">
+            <h1>Main Menu</h1>
+            <button onclick="showPage(3)">Check Balance</button>
+            <button onclick="showPage(4)">Withdraw</button>
+            <button onclick="showPage(5)">Deposit</button>
+            <button onclick="hideBankingBox()">Close</button>
+        </div>
+
+        <div id="page3" class="page" style="display: none;">
+            <h1>Check Balance</h1>
+            <p>Current Balance: <span id="balance">£1500</span></p>
+            <h2>Transaction Log</h2>
+            <ul id="transactionLog"></ul>
+            <button onclick="showPage(2)">Back</button>
+        </div>
+
+        <div id="page4" class="page" style="display: none;">
+            <h1>Withdraw</h1>
+            <input type="number" id="withdrawAmount" placeholder="Enter amount">
+            <button onclick="withdraw()">Withdraw</button>
+            <button onclick="showPage(2)">Back</button>
+        </div>
+
+        <div id="page5" class="page" style="display: none;">
+            <h1>Deposit</h1>
+            <input type="number" id="depositAmount" placeholder="Enter amount">
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="showPage(2)">Back</button>
+        </div>
+    </div>
+
+    <script src="banking.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* Ensure unique styling for the banking system */
+#bankingBox {
+    position: fixed; /* Ensure it stays in place */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact center */
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 9999; /* Ensure it's on top of other content */
+    cursor: auto; /* Ensure the cursor does not indicate dragging */
+}
+
+/* Header Styles */
+#bankingBox .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Space between header and content */
+}
+
+#bankingBox .header h1 {
+    margin: 0;
+    font-size: 20px; /* Adjust if necessary */
+    color: #333; /* Dark text for header */
+}
+
+#bankingBox #closeButton {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    height: 30px; /* Fixed height */
+    width: 30px; /* Fixed width */
+    border-radius: 50%; /* Circular button */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+#bankingBox #closeButton:hover {
+    background-color: #cc0000;
+}
+
+/* Page Styles */
+#bankingBox .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+/* Uniform Button Styles */
+#bankingBox button {
+    width: 100%; /* Full width of container */
+    max-width: 200px; /* Maximum width */
+    height: 40px; /* Fixed height */
+    padding: 0 10px; /* Horizontal padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bankingBox button:hover {
+    background-color: #0056b3;
+}
+
+/* Input Field Styles */
+#bankingBox input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* Transaction Log Styles */
+#bankingBox #transactionLog {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#bankingBox #transactionLog li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+/* Ensure unique styling for the banking system */
+#bankingBox {
+    position: fixed; /* Ensure it stays in place */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact center */
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 9999; /* Ensure it's on top of other content */
+    cursor: auto; /* Ensure the cursor does not indicate dragging */
+}
+
+/* Header Styles */
+#bankingBox .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Space between header and content */
+}
+
+#bankingBox .header h1 {
+    margin: 0;
+    font-size: 20px; /* Adjust if necessary */
+    color: #333; /* Dark text for header */
+}
+
+#bankingBox #closeButton {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    height: 30px; /* Fixed height */
+    width: 30px; /* Fixed width */
+    border-radius: 50%; /* Circular button */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+#bankingBox #closeButton:hover {
+    background-color: #cc0000;
+}
+
+/* Page Styles */
+#bankingBox .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+/* Uniform Button Styles */
+#bankingBox button {
+    width: 100%; /* Full width of container */
+    max-width: 200px; /* Maximum width */
+    height: 40px; /* Fixed height */
+    padding: 0 10px; /* Horizontal padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bankingBox button:hover {
+    background-color: #0056b3;
+}
+
+/* Input Field Styles */
+#bankingBox input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* Transaction Log Styles */
+#bankingBox #transactionLog {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#bankingBox #transactionLog li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}

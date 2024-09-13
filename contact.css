@@ -1,0 +1,161 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #5a5a5a;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;  /* Set text color to white */
+}
+
+body {
+    background-image: url('websiteBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+/* NAVBAR STYLES */
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #333; /* Dark gray background */
+    padding: 10px;
+    text-shadow: 1px 1px black;
+    z-index: 3; /* Ensure navbar is above everything */
+    position: fixed; /* Fixed position to keep it at the top */
+    top: 0; /* Position at the top of the viewport */
+    left: 0;
+}
+
+#navbar a {
+    color: white; /* White text */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+#navbar a:hover {
+    background-color: #ddd; /* Light gray background on hover */
+    color: black;
+    transition: 0.3s;
+}
+
+
+.heading1 {
+    font-size: 3.5em;  /* Increased font size */
+    color: white;  /* Set heading text color to white */
+    margin: 100px 0 20px;  /* Adjusted margin to account for fixed navbar */
+    text-align: center;
+}
+
+/* Form styles */
+.form {
+    background: #202020;  /* Dark background for form */
+    padding: 40px;  /* Increased padding for a spacious look */
+    border-radius: 20px;  /* More rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);  /* Larger shadow for depth */
+    max-width: 800px;  /* Increased max-width */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center align form elements */
+    gap: 20px;  /* Increased gap between elements */
+    color: white;  /* Set form text color to white */
+}
+
+.form label {
+    font-family: 'Verdana', sans-serif;  /* Custom font for labels */
+    font-size: 1.4em;  /* Adjusted font size */
+    font-weight: bold;  /* Make labels bold */
+    color: white;  /* White text color for labels */
+    display: block;  /* Make labels block elements */
+    text-align: center;  /* Center text within labels */
+    background-color: #2c0000;  /* Background color for label */
+    padding: 10px;  /* Padding inside label */
+    border-radius: 10px;  /* Rounded corners for label */
+    width: 100%;  /* Full width label */
+    max-width: 600px;  /* Set max-width for labels */
+    box-sizing: border-box;
+    margin-bottom: 15px;  /* Space below labels */
+}
+
+.form input[type="text"],
+.form textarea,
+.form input[type="file"] {
+    padding: 15px;  /* Increased padding */
+    font-size: 1.2em;  /* Increased font size */
+    border: 2px solid white;  /* White border color */
+    border-radius: 10px;  /* More rounded corners */
+    width: 100%;  /* Full width inputs */
+    max-width: 600px;  /* Set max-width for inputs */
+    box-sizing: border-box;
+    background: #333;  /* Dark input background color */
+    color: white;  /* Input text color */
+}
+
+.form input[type="text"]::placeholder,
+.form textarea::placeholder,
+.form input[type="file"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);  /* Faint white color for placeholders */
+}
+
+.form textarea {
+    resize: vertical;
+    height: 150px;  /* Increased height */
+}
+
+.form fieldset {
+    border: 2px solid white;  /* White border color */
+    padding: 20px;  /* Consistent padding */
+    border-radius: 10px;  /* Rounded corners */
+    color: white;  /* White text color */
+    width: 100%;
+    max-width: 600px;  /* Set max-width for fieldset */
+    box-sizing: border-box;
+    text-align: center;  /* Center text */
+}
+
+.form legend {
+    font-family: 'Verdana', sans-serif;  /* Custom font for legend */
+    font-size: 1.5em;  /* Increased font size */
+    padding: 0 10px;
+    color: #ff0000;  /* Red text color */
+}
+
+.form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;  /* Consistent margin */
+}
+
+.form input[type="radio"] {
+    margin-right: 10px;  /* Space between checkbox and label */
+}
+
+.form input[type="submit"] {
+    background-color: #2c0000;  /* Same background color as labels */
+    color: white;
+    border: none;
+    padding: 20px;  /* Consistent padding */
+    border-radius: 10px;  /* More rounded corners */
+    font-size: 1.5em;  /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;  /* Added transform transition */
+}
+
+.form input[type="submit"]:hover {
+    background-color: #ff0000;  /* Red background on hover */
+    transform: scale(1.05);  /* Slightly larger on hover */
+}
